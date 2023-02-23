@@ -1,0 +1,1020 @@
+{
+  "routerObj": [
+    {
+      "url": "/account",
+      "method": "get",
+      "desc": "Get Account Info"
+    },
+    {
+      "url": "/applications",
+      "method": "get",
+      "desc": "Get a list of all available Applications"
+    },
+    {
+      "url": "/backups",
+      "method": "get",
+      "desc": "Get information about Backups in your account."
+    },
+    {
+      "url": "/backups/{backup-id}",
+      "method": "get",
+      "desc": "Get the information for the Backup."
+    },
+    {
+      "url": "/bare-metals",
+      "method": "get",
+      "desc": "List all Bare Metal instances in your account."
+    },
+    {
+      "url": "/bare-metals",
+      "method": "post",
+      "desc": "Create Bare Metal Instance."
+    },
+    {
+      "url": "/bare-metals/halt",
+      "method": "post",
+      "desc": "Halt Bare Metals."
+    },
+    {
+      "url": "/bare-metals/reboot",
+      "method": "post",
+      "desc": "Reboot Bare Metals."
+    },
+    {
+      "url": "/bare-metals/start",
+      "method": "post",
+      "desc": "Start Bare Metals."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}",
+      "method": "get",
+      "desc": "Get information for a Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}",
+      "method": "patch",
+      "desc": "Update Bare Metal."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}",
+      "method": "delete",
+      "desc": "Delete a Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/ipv4",
+      "method": "get",
+      "desc": "Get the IPv4 information for the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/ipv6",
+      "method": "get",
+      "desc": "Get the IPv6 information for the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/start",
+      "method": "post",
+      "desc": "Start the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/reboot",
+      "method": "post",
+      "desc": "Reboot the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/reinstall",
+      "method": "post",
+      "desc": "Reinstall the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/halt",
+      "method": "post",
+      "desc": "Halt the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/bandwidth",
+      "method": "get",
+      "desc": "Get bandwidth information for the Bare Metal instance."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/user-data",
+      "method": "get",
+      "desc": "Get the user-supplied, base64 encoded user data for a Bare Metal."
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/upgrades",
+      "method": "get",
+      "desc": "Get available upgrades for a Bare Metal"
+    },
+    {
+      "url": "/bare-metals/{baremetal-id}/vnc",
+      "method": "get",
+      "desc": "Get the VNC URL for a Bare Metal"
+    },
+    {
+      "url": "/billing/history",
+      "method": "get",
+      "desc": "Read-only billing information for your user account."
+    },
+    {
+      "url": "/billing/invoices",
+      "method": "get",
+      "desc": "Retrieve a list of invoices"
+    },
+    {
+      "url": "/billing/invoices/{invoice-id}",
+      "method": "get",
+      "desc": "Retrieve specified invoice"
+    },
+    {
+      "url": "/billing/invoices/{invoice-id}/items",
+      "method": "get",
+      "desc": "Retrieve full specified invoice"
+    },
+    {
+      "url": "/blocks",
+      "method": "get",
+      "desc": "List all Block Storage in your account."
+    },
+    {
+      "url": "/blocks",
+      "method": "post",
+      "desc": "Create Block Storage"
+    },
+    {
+      "url": "/blocks/{block-id}",
+      "method": "get",
+      "desc": "Get information for Block Storage."
+    },
+    {
+      "url": "/blocks/{block-id}",
+      "method": "delete",
+      "desc": "Delete Block Storage."
+    },
+    {
+      "url": "/blocks/{block-id}",
+      "method": "patch",
+      "desc": "Update information for Block Storage."
+    },
+    {
+      "url": "/blocks/{block-id}/attach",
+      "method": "post",
+      "desc": "Attach Block Storage."
+    },
+    {
+      "url": "/blocks/{block-id}/detach",
+      "method": "post",
+      "desc": "Detach Block Storage."
+    },
+    {
+      "url": "/domains",
+      "method": "get",
+      "desc": "List DNS Domains"
+    },
+    {
+      "url": "/domains",
+      "method": "post",
+      "desc": "Create DNS Domain"
+    },
+    {
+      "url": "/domains/{dns-domain}",
+      "method": "get",
+      "desc": "Get DNS Domain"
+    },
+    {
+      "url": "/domains/{dns-domain}",
+      "method": "delete",
+      "desc": "Delete Domain"
+    },
+    {
+      "url": "/domains/{dns-domain}",
+      "method": "put",
+      "desc": "Update a DNS Domain"
+    },
+    {
+      "url": "/domains/{dns-domain}/soa",
+      "method": "get",
+      "desc": "Get SOA information"
+    },
+    {
+      "url": "/domains/{dns-domain}/soa",
+      "method": "patch",
+      "desc": "Update SOA information"
+    },
+    {
+      "url": "/domains/{dns-domain}/dnssec",
+      "method": "get",
+      "desc": "Get DNSSec Info"
+    },
+    {
+      "url": "/domains/{dns-domain}/records",
+      "method": "post",
+      "desc": "Create Record"
+    },
+    {
+      "url": "/domains/{dns-domain}/records",
+      "method": "get",
+      "desc": "List Records"
+    },
+    {
+      "url": "/domains/{dns-domain}/records/{record-id}",
+      "method": "get",
+      "desc": "Get Record"
+    },
+    {
+      "url": "/domains/{dns-domain}/records/{record-id}",
+      "method": "patch",
+      "desc": "Update Record"
+    },
+    {
+      "url": "/domains/{dns-domain}/records/{record-id}",
+      "method": "delete",
+      "desc": "Delete Record"
+    },
+    {
+      "url": "/firewalls",
+      "method": "get",
+      "desc": "List Firewall Groups"
+    },
+    {
+      "url": "/firewalls",
+      "method": "get",
+      "desc": "Create Firewall Group"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}",
+      "method": "get",
+      "desc": "Get Firewall Group"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}",
+      "method": "put",
+      "desc": "Update Firewall Group"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}",
+      "method": "delete",
+      "desc": "Delete Firewall Group"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}/rules",
+      "method": "get",
+      "desc": "List Firewall Rules"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}/rules",
+      "method": "post",
+      "desc": "Create Firewall Rules"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}/rules/{firewall-rule-id}",
+      "method": "delete",
+      "desc": "Delete Firewall Rule"
+    },
+    {
+      "url": "/firewalls/{firewall-group-id}/rules/{firewall-rule-id}",
+      "method": "get",
+      "desc": "Get Firewall Rule"
+    },
+    {
+      "url": "/instances",
+      "method": "get",
+      "desc": "List Instances"
+    },
+    {
+      "url": "/instances",
+      "method": "post",
+      "desc": "Create Instance"
+    },
+    {
+      "url": "/instances/{instance-id}",
+      "method": "get",
+      "desc": "Get Instance"
+    },
+    {
+      "url": "/instances/{instance-id}",
+      "method": "patch",
+      "desc": "Update Instance"
+    },
+    {
+      "url": "/instances/{instance-id}",
+      "method": "delete",
+      "desc": "Delete Instance"
+    },
+    {
+      "url": "/instances/halt",
+      "method": "post",
+      "desc": "Halt Instances"
+    },
+    {
+      "url": "/instances/reboot",
+      "method": "post",
+      "desc": "Reboot instances"
+    },
+    {
+      "url": "/instances/start",
+      "method": "post",
+      "desc": "Start instances"
+    },
+    {
+      "url": "/instances/{instance-id}/start",
+      "method": "post",
+      "desc": "Start instance"
+    },
+    {
+      "url": "/instances/{instance-id}/reboot",
+      "method": "post",
+      "desc": "Reboot Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/reinstall",
+      "method": "post",
+      "desc": "Reinstall Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/bandwidth",
+      "method": "get",
+      "desc": "Instance Bandwidth"
+    },
+    {
+      "url": "/instances/{instance-id}/neighbors",
+      "method": "get",
+      "desc": "Get Instance neighbors"
+    },
+    {
+      "url": "/instances/{instance-id}/vpcs",
+      "method": "get",
+      "desc": "List instance VPCs"
+    },
+    {
+      "url": "/instances/{instance-id}/iso",
+      "method": "get",
+      "desc": "Get Instance ISO Status"
+    },
+    {
+      "url": "/instances/{instance-id}/iso/attach",
+      "method": "post",
+      "desc": "Attach ISO to Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/iso/detach",
+      "method": "post",
+      "desc": "Detach ISO from instance"
+    },
+    {
+      "url": "/instances/{instance-id}/vpcs/attach",
+      "method": "post",
+      "desc": "Attach VPC to Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/vpcs/detach",
+      "method": "post",
+      "desc": "Detach VPC from Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/backup-schedule",
+      "method": "post",
+      "desc": "Set Instance Backup Schedule"
+    },
+    {
+      "url": "/instances/{instance-id}/backup-schedule",
+      "method": "get",
+      "desc": "Get Instance Backup Schedule"
+    },
+    {
+      "url": "/instances/{instance-id}/restore",
+      "method": "post",
+      "desc": "Restore Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv4",
+      "method": "get",
+      "desc": "List Instance IPv4 Information"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv4",
+      "method": "post",
+      "desc": "Create IPv4"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv6",
+      "method": "get",
+      "desc": "Get Instance IPv6 Information"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv6/reverse",
+      "method": "post",
+      "desc": "Create Instance Reverse IPv6"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv6/reverse",
+      "method": "get",
+      "desc": "List Instance IPv6 Reverse"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv4/reverse",
+      "method": "post",
+      "desc": "Create Instance Reverse IPv4"
+    },
+    {
+      "url": "/instances/{instance-id}/user-data",
+      "method": "get",
+      "desc": "Get Instance User Data"
+    },
+    {
+      "url": "/instances/{instance-id}/halt",
+      "method": "post",
+      "desc": "Halt Instance"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv4/reverse/default",
+      "method": "post",
+      "desc": "Set Default Reverse DNS Entry"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv4/{ipv4}",
+      "method": "delete",
+      "desc": "Delete IPv4 Address"
+    },
+    {
+      "url": "/instances/{instance-id}/ipv6/reverse/{ipv6}",
+      "method": "delete",
+      "desc": "Delete Instance Reverse IPv6"
+    },
+    {
+      "url": "/instances/{instance-id}/upgrades",
+      "method": "get",
+      "desc": "Get Available Instance Upgrades"
+    },
+    {
+      "url": "/iso",
+      "method": "get",
+      "desc": "List ISOs"
+    },
+    {
+      "url": "/iso",
+      "method": "post",
+      "desc": "Create ISO"
+    },
+    {
+      "url": "/iso/{iso-id}",
+      "method": "get",
+      "desc": "Get ISO"
+    },
+    {
+      "url": "/iso/{iso-id}",
+      "method": "delete",
+      "desc": "Delete ISO"
+    },
+    {
+      "url": "/iso-public",
+      "method": "get",
+      "desc": "List Public ISOs"
+    },
+    {
+      "url": "/kubernetes/clusters",
+      "method": "post",
+      "desc": "Create Kubernetes Cluster"
+    },
+    {
+      "url": "/kubernetes/clusters",
+      "method": "get",
+      "desc": "List all Kubernetes Clusters"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}",
+      "method": "get",
+      "desc": "Get Kubernetes Cluster"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}",
+      "method": "put",
+      "desc": "Update Kubernetes Cluster"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}",
+      "method": "delete",
+      "desc": "Delete Kubernetes Cluster"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/delete-with-linked-resources",
+      "method": "delete",
+      "desc": "Delete VKE Cluster and All Related Resources"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/resources",
+      "method": "get",
+      "desc": "Get Kubernetes Resources"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/available-upgrades",
+      "method": "get",
+      "desc": "Get Kubernetes Available Upgrades"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/upgrades",
+      "method": "post",
+      "desc": "Start Kubernetes Cluster Upgrade"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools",
+      "method": "post",
+      "desc": "Create NodePool"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools",
+      "method": "get",
+      "desc": "List NodePools"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}",
+      "method": "get",
+      "desc": "Get NodePool"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}",
+      "method": "patch",
+      "desc": "Update Nodepool"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}",
+      "method": "delete",
+      "desc": "Delete Nodepool"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/nodes/{node-id}",
+      "method": "delete",
+      "desc": "Delete NodePool Instance"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/node-pools/{nodepool-id}/nodes/{node-id}/recycle",
+      "method": "post",
+      "desc": "Recycle a NodePool Instance"
+    },
+    {
+      "url": "/kubernetes/clusters/{vke-id}/config",
+      "method": "get",
+      "desc": "Get Kubernetes Cluster Kubeconfig"
+    },
+    {
+      "url": "/kubernetes/versions",
+      "method": "get",
+      "desc": "Get Kubernetes Versions"
+    },
+    {
+      "url": "/load-balancers",
+      "method": "get",
+      "desc": "List Load Balancers"
+    },
+    {
+      "url": "/load-balancers",
+      "method": "post",
+      "desc": "Create Load Balancer"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}",
+      "method": "get",
+      "desc": "Get Load Balancer"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}",
+      "method": "patch",
+      "desc": "Update Load Balancer"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}",
+      "method": "delete",
+      "desc": "Delete Load Balancer"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/forwarding-rules",
+      "method": "get",
+      "desc": "List Forwarding Rules"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/forwarding-rules",
+      "method": "post",
+      "desc": "Create Forwarding Rule"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/forwarding-rules/{forwarding-rule-id}",
+      "method": "get",
+      "desc": "Get Forwarding Rule"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/forwarding-rules/{forwarding-rule-id}",
+      "method": "delete",
+      "desc": "Delete Forwarding Rule"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/firewall-rules",
+      "method": "get",
+      "desc": "List Firewall Rules"
+    },
+    {
+      "url": "/load-balancers/{load-balancer-id}/firewall-rules/{firewall-rule-id}",
+      "method": "get",
+      "desc": "Get Firewall Rule"
+    },
+    {
+      "url": "/databases/plans",
+      "method": "get",
+      "desc": "List Managed Database Plans"
+    },
+    {
+      "url": "/databases",
+      "method": "get",
+      "desc": "List Managed Databases"
+    },
+    {
+      "url": "/databases",
+      "method": "post",
+      "desc": "Create Managed Database"
+    },
+    {
+      "url": "/databases/{database-id}",
+      "method": "get",
+      "desc": "Get Managed Database"
+    },
+    {
+      "url": "/databases/{database-id}",
+      "method": "put",
+      "desc": "Update Managed Database"
+    },
+    {
+      "url": "/databases/{database-id}",
+      "method": "delete",
+      "desc": "Delete Managed Database"
+    },
+    {
+      "url": "/databases/{database-id}/users",
+      "method": "get",
+      "desc": "List Database Users"
+    },
+    {
+      "url": "/databases/{database-id}/users",
+      "method": "post",
+      "desc": "Create Database User"
+    },
+    {
+      "url": "/databases/{database-id}/users/{username}",
+      "method": "get",
+      "desc": "Get Database User"
+    },
+    {
+      "url": "/databases/{database-id}/users/{username}",
+      "method": "put",
+      "desc": "Update Database User"
+    },
+    {
+      "url": "/databases/{database-id}/users/{username}",
+      "method": "delete",
+      "desc": "Delete Database User"
+    },
+    {
+      "url": "/databases/{database-id}/dbs",
+      "method": "get",
+      "desc": "List Logical Databases"
+    },
+    {
+      "url": "/databases/{database-id}/dbs",
+      "method": "post",
+      "desc": "Create Logical Database"
+    },
+    {
+      "url": "/databases/{database-id}/dbs/{db-name}",
+      "method": "get",
+      "desc": "Get Logical Database"
+    },
+    {
+      "url": "/databases/{database-id}/dbs/{db-name}",
+      "method": "delete",
+      "desc": "Delete Logical Database"
+    },
+    {
+      "url": "/databases/{database-id}/maintenance",
+      "method": "get",
+      "desc": "List Maintenance Updates"
+    },
+    {
+      "url": "/databases/{database-id}/maintenance",
+      "method": "post",
+      "desc": "Start Maintenance Updates"
+    },
+    {
+      "url": "/databases/{database-id}/alerts",
+      "method": "post",
+      "desc": "List Service Alerts"
+    },
+    {
+      "url": "/databases/{database-id}/migration",
+      "method": "get",
+      "desc": "Get Migration Status"
+    },
+    {
+      "url": "/databases/{database-id}/migration",
+      "method": "post",
+      "desc": "Start Migration"
+    },
+    {
+      "url": "/databases/{database-id}/migration",
+      "method": "delete",
+      "desc": "Detach Migration"
+    },
+    {
+      "url": "/databases/{database-id}/read-replica",
+      "method": "post",
+      "desc": "Add Read-Only Replica"
+    },
+    {
+      "url": "/databases/{database-id}/backups",
+      "method": "get",
+      "desc": "Get Backup Information"
+    },
+    {
+      "url": "/databases/{database-id}/restore",
+      "method": "post",
+      "desc": "Restore from Backup"
+    },
+    {
+      "url": "/databases/{database-id}/fork",
+      "method": "post",
+      "desc": "Fork Managed Database"
+    },
+    {
+      "url": "/databases/{database-id}/connection-pools",
+      "method": "get",
+      "desc": "List Connection Pools"
+    },
+    {
+      "url": "/databases/{database-id}/connection-pools",
+      "method": "post",
+      "desc": "Create Connection Pool"
+    },
+    {
+      "url": "/databases/{database-id}/connection-pools/{pool-name}",
+      "method": "get",
+      "desc": "Get Connection Pool"
+    },
+    {
+      "url": "/databases/{database-id}/connection-pools/{pool-name}",
+      "method": "put",
+      "desc": "Update Connection Pool"
+    },
+    {
+      "url": "/databases/{database-id}/connection-pools/{pool-name}",
+      "method": "delete",
+      "desc": "Delete Connection Pool"
+    },
+    {
+      "url": "/databases/{database-id}/advanced-options",
+      "method": "get",
+      "desc": "List Advanced Options"
+    },
+    {
+      "url": "/databases/{database-id}/advanced-options",
+      "method": "put",
+      "desc": "Update Advanced Options"
+    },
+    {
+      "url": "/databases/{database-id}/version-upgrade",
+      "method": "get",
+      "desc": "List Available Versions"
+    },
+    {
+      "url": "/databases/{database-id}/version-upgrade",
+      "method": "post",
+      "desc": "Start Version Upgrade"
+    },
+    {
+      "url": "/object-storage",
+      "method": "get",
+      "desc": "Get a list of all Object Storage in your account."
+    },
+    {
+      "url": "/object-storage",
+      "method": "post",
+      "desc": "Create new Object Storage. The cluster_id attribute is required."
+    },
+    {
+      "url": "/object-storage/{object-storage-id}",
+      "method": "get",
+      "desc": "Get information about an Object Storage."
+    },
+    {
+      "url": "/object-storage/{object-storage-id}",
+      "method": "delete",
+      "desc": "Delete an Object Storage."
+    },
+    {
+      "url": "/object-storage/{object-storage-id}",
+      "method": "put",
+      "desc": "Update the label for an Object Storage."
+    },
+    {
+      "url": "/object-storage/{object-storage-id}/regenerate-keys",
+      "method": "post",
+      "desc": "Regenerate the keys for an Object Storage."
+    },
+    {
+      "url": "/object-storage/clusters",
+      "method": "get",
+      "desc": "Get a list of all Object Storage Clusters."
+    },
+    {
+      "url": "/os",
+      "method": "get",
+      "desc": "List the OS images available for installation at Vultr."
+    },
+    {
+      "url": "/plans",
+      "method": "get",
+      "desc": "Get a list of all VPS plans at Vultr."
+    },
+    {
+      "url": "/plans-metal",
+      "method": "get",
+      "desc": "Get a list of all Bare Metal plans at Vultr."
+    },
+    {
+      "url": "/vpcs/{vpc-id}",
+      "method": "get",
+      "desc": "Get information about a VPC."
+    },
+    {
+      "url": "/vpcs/{vpc-id}",
+      "method": "delete",
+      "desc": "Delete a VPC."
+    },
+    {
+      "url": "/vpcs/{vpc-id}",
+      "method": "put",
+      "desc": "Update information for a VPC."
+    },
+    {
+      "url": "/vpcs",
+      "method": "get",
+      "desc": "Get a list of all VPCs in your account."
+    },
+    {
+      "url": "/vpcs",
+      "method": "post",
+      "desc": "Create a new VPC."
+    },
+    {
+      "url": "/reserved-ips/{reserved-ip}",
+      "method": "get",
+      "desc": "Get information about a Reserved IP"
+    },
+    {
+      "url": "/reserved-ips/{reserved-ip}",
+      "method": "delete",
+      "desc": "Delete a Reserved IP"
+    },
+    {
+      "url": "/reserved-ips/{reserved-ip}",
+      "method": "patch",
+      "desc": "Update information on a Reserved IP"
+    },
+    {
+      "url": "/reserved-ips",
+      "method": "get",
+      "desc": "List all Reserved IPs in your account"
+    },
+    {
+      "url": "/reserved-ips",
+      "method": "post",
+      "desc": "Create a new Reserved IP. The region and ip_type attributes are required"
+    },
+    {
+      "url": "/reserved-ips/{reserved-ip}/attach",
+      "method": "post",
+      "desc": "Attach a Reserved IP to an compute instance or a baremetal instance - instance_id"
+    },
+    {
+      "url": "/reserved-ips/{reserved-ip}/detach",
+      "method": "post",
+      "desc": "Detach a Reserved IP"
+    },
+    {
+      "url": "/reserved-ips/convert",
+      "method": "post",
+      "desc": "Convert the ip_address of an existing instance into a Reserved IP"
+    },
+    {
+      "url": "/regions",
+      "method": "get",
+      "desc": "List all Regions at Vultr"
+    },
+    {
+      "url": "/regions/{region-id}/availability",
+      "method": "get",
+      "desc": "Get a list of the available plans in Region region-id. Not all plans are available in all regions"
+    },
+    {
+      "url": "/snapshots/{snapshot-id}",
+      "method": "delete",
+      "desc": "Delete a Snapshot"
+    },
+    {
+      "url": "/snapshots/{snapshot-id}",
+      "method": "get",
+      "desc": "Get information about a Snapshot"
+    },
+    {
+      "url": "/snapshots/{snapshot-id}",
+      "method": "put",
+      "desc": "Update the description for a Snapshot"
+    },
+    {
+      "url": "/snapshots",
+      "method": "get",
+      "desc": "Get information about all Snapshots in your account"
+    },
+    {
+      "url": "/snapshots",
+      "method": "post",
+      "desc": "Create a new Snapshot for instance_id"
+    },
+    {
+      "url": "/snapshots/create-from-url",
+      "method": "post",
+      "desc": "Create a new Snapshot from a RAW image located at url"
+    },
+    {
+      "url": "/ssh-keys/{ssh-key-id}",
+      "method": "get",
+      "desc": "Get information about an SSH Key"
+    },
+    {
+      "url": "/ssh-keys/{ssh-key-id}",
+      "method": "patch",
+      "desc": "Update an SSH Key. The attributes name and ssh_key are optional. If not set, the attributes will retain their original values. New deployments will use the updated key, but this action does not update previously deployed instances."
+    },
+    {
+      "url": "/ssh-keys/{ssh-key-id}",
+      "method": "delete",
+      "desc": "Delete an SSH Key"
+    },
+    {
+      "url": "/ssh-keys",
+      "method": "get",
+      "desc": "List all SSH Keys in your account"
+    },
+    {
+      "url": "/ssh-keys",
+      "method": "post",
+      "desc": "Create a new SSH Key for use with future instances. This does not update any running instances"
+    },
+    {
+      "url": "/startup-scripts/{startup-id}",
+      "method": "get",
+      "desc": "Get information for a Startup Script"
+    },
+    {
+      "url": "/startup-scripts/{startup-id}",
+      "method": "delete",
+      "desc": "Delete a Startup Script"
+    },
+    {
+      "url": "/startup-scripts/{startup-id}",
+      "method": "patch",
+      "desc": "Update a Startup Script. The attributes name and script are optional. If not set, the attributes will retain their original values. The script attribute is base-64 encoded. New deployments will use the updated script, but this action does not update previously deployed instances"
+    },
+    {
+      "url": "/startup-scripts",
+      "method": "get",
+      "desc": "Get a list of all Startup Scripts"
+    },
+    {
+      "url": "/startup-scripts",
+      "method": "post",
+      "desc": "Create a new Startup Script. The name and script attributes are required, and scripts are base-64 encoded"
+    },
+    {
+      "url": "/users/{user-id}",
+      "method": "get",
+      "desc": "Get information about a User"
+    },
+    {
+      "url": "/users/{user-id}",
+      "method": "delete",
+      "desc": "Get information about a User"
+    },
+    {
+      "url": "/users/{user-id}",
+      "method": "patch",
+      "desc": "Update information for a User. All attributes are optional. If not set, the attributes will retain their original values"
+    },
+    {
+      "url": "/users",
+      "method": "get",
+      "desc": "Get a list of all Users in your account"
+    },
+    {
+      "url": "/users",
+      "method": "post",
+      "desc": "Create a new User. The email, name, and password attributes are required"
+    }
+  ],
+  "baseURL": "https://api.vultr.com/v2"
+}
