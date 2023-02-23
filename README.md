@@ -1,6 +1,6 @@
 # vultr-v2
 
-Easy and nice to vultr v2 api to **JS Object**
+Easy and nice to trans vultr v2 API into **JS Object**, 100 lines of code in one file
 
 # Intro 简介
 
@@ -38,14 +38,14 @@ const Vultr = require('vultr-v2')
 const tokenApi = 'Your tokenKey'
 
 async function main() {
-  let myVultr = new Vultr(tokenApi)
+  let myVultr = new Vultr(tokenApi) // 实例化
   console.log(myVultr.router.length)
 
-  let r2 = await myVultr.loadBalancers.get()
-  console.log(r2)
+  let result = await myVultr.loadBalancers.get() // 获取负载均衡列表
+  console.log(result)
 
-  // r2 = await vultr1.loadBalancers.getById('your load-balancer-id')
-  // console.log(r2)
+  // result = await vultr1.loadBalancers.getById('Your load-balancer-id') // 获取负载均衡详情
+  // console.log(result)
 }
 main()
 ```
