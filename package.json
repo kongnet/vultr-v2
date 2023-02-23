@@ -1,0 +1,32 @@
+{
+  "name": "vultr-v2",
+  "version": "0.9.1",
+  "description": "vultr-v2 router to object",
+  "main": "index.js",
+  "scripts": {
+    "push": "npm version patch && npm publish . && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongnet/vultr-v2.git"
+  },
+  "keywords": [
+    "vultr-v2",
+    "js"
+  ],
+  "author": "kongnet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongnet/vultr-v2/issues"
+  },
+  "homepage": "https://github.com/kongnet/vultr-v2#readme",
+  "devDependencies": {
+    "cz-jt": "^0.1.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
+}
