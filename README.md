@@ -31,6 +31,12 @@ let myVultr = new Vultr(tokenApi)
 let r = await myVultr.loadBalancers.post(data)
 ```
 
+# Install 安装
+
+```js
+npm i vultr-v2
+```
+
 # Example 例子
 
 ```js
