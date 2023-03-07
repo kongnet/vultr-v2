@@ -56,12 +56,12 @@ function routerList2Obj (routerObjAry, key) {
         point = point[item]
       }
     }
-    point[x.method + (paramCount ? 'ById' : '')] = bindFunc(key, x.url, x.method, paramCount)
+    point[x.method + (paramCount ? 'ById' : '')] = bindFunc(key, x.url, x.method.toUp(), paramCount)
   })
   //$.dir(methodObj)
   return methodObj
 }
-async function vultrFetch (url, authStr, method = 'get', body = null) {
+async function vultrFetch (url, authStr, method = 'GET', body = null) {
   let rst = await fetch(url, {
     headers: {
       Authorization: 'Bearer ' + authStr,
