@@ -1,6 +1,6 @@
 {
   "name": "vultr-v2",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "vultr-v2 router to object",
   "main": "index.js",
   "scripts": {
