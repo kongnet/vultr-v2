@@ -29,5 +29,8 @@
     "commitizen": {
       "path": "./node_modules/cz-jt"
     }
+  },
+  "dependencies": {
+    "meeko": "^1.8.298"
   }
 }

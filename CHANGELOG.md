@@ -1,3 +1,8 @@
+## [0.9.7](https://github.com/kongnet/vultr-v2/compare/v0.9.6...v0.9.7) (2023-03-07)
+
+
+
+
 ## [0.9.6](https://github.com/kongnet/vultr-v2/compare/v0.9.5...v0.9.6) (2023-02-28)
 
 
